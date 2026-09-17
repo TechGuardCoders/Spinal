@@ -1,0 +1,893 @@
+{
+  "timestamp": "2026-09-16_225647",
+  "endpoint": "http://192.168.0.182:8000",
+  "model": "glm-5.3-flash",
+  "concurrency": 4,
+  "wall_s": 25.02,
+  "traces": [
+    {
+      "id": "74fe86230673",
+      "ts": 1789613782.6977515,
+      "workloadClass": "code",
+      "promptTokens": 0,
+      "completionTokens": 20,
+      "ttfbMs": 24,
+      "ttftMs": 297,
+      "totalMs": 4446,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613782.752926,
+          "running": 0.0,
+          "waiting": 0.0,
+          "kvCache": 0.0
+        },
+        {
+          "ts": 1789613783.7959197,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613784.8188846,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613785.8476012,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613786.9102361,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "ba9db8716003",
+      "ts": 1789613782.7010298,
+      "workloadClass": "short",
+      "promptTokens": 0,
+      "completionTokens": 1,
+      "ttfbMs": 1035,
+      "ttftMs": 1523,
+      "totalMs": 1737,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613782.752926,
+          "running": 0.0,
+          "waiting": 0.0,
+          "kvCache": 0.0
+        },
+        {
+          "ts": 1789613783.7959197,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        }
+      ],
+      "peakConcurrency": 3.0
+    },
+    {
+      "id": "6de50241a739",
+      "ts": 1789613782.7010298,
+      "workloadClass": "medium",
+      "promptTokens": 0,
+      "completionTokens": 59,
+      "ttfbMs": 21,
+      "ttftMs": 294,
+      "totalMs": 12864,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613782.752926,
+          "running": 0.0,
+          "waiting": 0.0,
+          "kvCache": 0.0
+        },
+        {
+          "ts": 1789613783.7959197,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613784.8188846,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613785.8476012,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613786.9102361,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613787.9469833,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613788.96703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613789.9966948,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613791.0446684,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613792.0913723,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613793.142687,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613794.1683836,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613795.2152376,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "65a8f4bfb235",
+      "ts": 1789613782.703344,
+      "workloadClass": "medium",
+      "promptTokens": 0,
+      "completionTokens": 49,
+      "ttfbMs": 21,
+      "ttftMs": 294,
+      "totalMs": 10689,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613782.752926,
+          "running": 0.0,
+          "waiting": 0.0,
+          "kvCache": 0.0
+        },
+        {
+          "ts": 1789613783.7959197,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613784.8188846,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613785.8476012,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613786.9102361,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613787.9469833,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613788.96703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613789.9966948,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613791.0446684,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613792.0913723,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613793.142687,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "265a0009ed31",
+      "ts": 1789613784.4365153,
+      "workloadClass": "long",
+      "promptTokens": 0,
+      "completionTokens": 45,
+      "ttfbMs": 29,
+      "ttftMs": 775,
+      "totalMs": 10301,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613784.8188846,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613785.8476012,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613786.9102361,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613787.9469833,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613788.96703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613789.9966948,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613791.0446684,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613792.0913723,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613793.142687,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613794.1683836,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "3e3372b51a1b",
+      "ts": 1789613787.1449575,
+      "workloadClass": "medium",
+      "promptTokens": 0,
+      "completionTokens": 46,
+      "ttfbMs": 27,
+      "ttftMs": 712,
+      "totalMs": 10405,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613787.9469833,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613788.96703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613789.9966948,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613791.0446684,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613792.0913723,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613793.142687,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613794.1683836,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613795.2152376,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613796.2395597,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613797.2781703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "35a56993d8fb",
+      "ts": 1789613793.391554,
+      "workloadClass": "medium",
+      "promptTokens": 0,
+      "completionTokens": 35,
+      "ttfbMs": 20,
+      "ttftMs": 731,
+      "totalMs": 8212,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613794.1683836,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613795.2152376,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613796.2395597,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613797.2781703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613798.316774,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613799.3562307,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613800.4002335,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613801.4602895,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "071b0ac0602c",
+      "ts": 1789613794.7379282,
+      "workloadClass": "short",
+      "promptTokens": 0,
+      "completionTokens": 34,
+      "ttfbMs": 33,
+      "ttftMs": 616,
+      "totalMs": 8053,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613795.2152376,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613796.2395597,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613797.2781703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613798.316774,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613799.3562307,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613800.4002335,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613801.4602895,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613802.523128,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "b310a89a4b0d",
+      "ts": 1789613795.5662878,
+      "workloadClass": "medium",
+      "promptTokens": 0,
+      "completionTokens": 43,
+      "ttfbMs": 10,
+      "ttftMs": 696,
+      "totalMs": 9756,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613796.2395597,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613797.2781703,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613798.316774,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613799.3562307,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613800.4002335,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613801.4602895,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613802.523128,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613803.5714095,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613804.6019354,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "645d34db8b5a",
+      "ts": 1789613797.551491,
+      "workloadClass": "short",
+      "promptTokens": 0,
+      "completionTokens": 1,
+      "ttfbMs": 26,
+      "ttftMs": 706,
+      "totalMs": 942,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613798.316774,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "d71dec1a3850",
+      "ts": 1789613798.4929955,
+      "workloadClass": "long",
+      "promptTokens": 0,
+      "completionTokens": 41,
+      "ttfbMs": 28,
+      "ttftMs": 750,
+      "totalMs": 8521,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613799.3562307,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613800.4002335,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613801.4602895,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613802.523128,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613803.5714095,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613804.6019354,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613805.6472716,
+          "running": 2.0,
+          "waiting": 0.0,
+          "kvCache": 0.05343511450381677
+        },
+        {
+          "ts": 1789613806.6908772,
+          "running": 2.0,
+          "waiting": 0.0,
+          "kvCache": 0.05343511450381677
+        }
+      ],
+      "peakConcurrency": 4.0
+    },
+    {
+      "id": "d570c54343ad",
+      "ts": 1789613801.6045358,
+      "workloadClass": "code",
+      "promptTokens": 0,
+      "completionTokens": 33,
+      "ttfbMs": 35,
+      "ttftMs": 747,
+      "totalMs": 6106,
+      "failed": false,
+      "error": null,
+      "ok": true,
+      "samples": [
+        {
+          "ts": 1789613802.523128,
+          "running": 4.0,
+          "waiting": 0.0,
+          "kvCache": 0.10687022900763354
+        },
+        {
+          "ts": 1789613803.5714095,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613804.6019354,
+          "running": 3.0,
+          "waiting": 0.0,
+          "kvCache": 0.08015267175572516
+        },
+        {
+          "ts": 1789613805.6472716,
+          "running": 2.0,
+          "waiting": 0.0,
+          "kvCache": 0.05343511450381677
+        },
+        {
+          "ts": 1789613806.6908772,
+          "running": 2.0,
+          "waiting": 0.0,
+          "kvCache": 0.05343511450381677
+        }
+      ],
+      "peakConcurrency": 4.0
+    }
+  ],
+  "engine_samples": [
+    {
+      "ts": 1789613782.752926,
+      "running": 0.0,
+      "waiting": 0.0,
+      "kvCache": 0.0
+    },
+    {
+      "ts": 1789613783.7959197,
+      "running": 3.0,
+      "waiting": 0.0,
+      "kvCache": 0.08015267175572516
+    },
+    {
+      "ts": 1789613784.8188846,
+      "running": 3.0,
+      "waiting": 0.0,
+      "kvCache": 0.08015267175572516
+    },
+    {
+      "ts": 1789613785.8476012,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613786.9102361,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613787.9469833,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613788.96703,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613789.9966948,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613791.0446684,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613792.0913723,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613793.142687,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613794.1683836,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613795.2152376,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613796.2395597,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613797.2781703,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613798.316774,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613799.3562307,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613800.4002335,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613801.4602895,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613802.523128,
+      "running": 4.0,
+      "waiting": 0.0,
+      "kvCache": 0.10687022900763354
+    },
+    {
+      "ts": 1789613803.5714095,
+      "running": 3.0,
+      "waiting": 0.0,
+      "kvCache": 0.08015267175572516
+    },
+    {
+      "ts": 1789613804.6019354,
+      "running": 3.0,
+      "waiting": 0.0,
+      "kvCache": 0.08015267175572516
+    },
+    {
+      "ts": 1789613805.6472716,
+      "running": 2.0,
+      "waiting": 0.0,
+      "kvCache": 0.05343511450381677
+    },
+    {
+      "ts": 1789613806.6908772,
+      "running": 2.0,
+      "waiting": 0.0,
+      "kvCache": 0.05343511450381677
+    },
+    {
+      "ts": 1789613807.7346153,
+      "running": 0.0,
+      "waiting": 0.0,
+      "kvCache": 0.0
+    }
+  ]
+}

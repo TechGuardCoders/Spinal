@@ -1,6 +1,6 @@
 {
   "timestamp": "2026-09-16_225647",
-  "endpoint": "http://192.168.0.182:8000",
+  "endpoint": "http://<head-node>:8000",
   "model": "glm-5.3-flash",
   "concurrency": 4,
   "wall_s": 25.02,

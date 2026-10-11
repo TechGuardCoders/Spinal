@@ -93,7 +93,7 @@ def main():
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
-    base = os.environ.get("VLLM_BASE_URL", "http://192.168.0.182:8000")
+    base = os.environ.get("VLLM_BASE_URL", "http://localhost:8000")
     key = os.environ.get("VLLM_API_KEY")
     model = os.environ.get("VLLM_MODEL", "glm-5.3-flash")
     if not key:

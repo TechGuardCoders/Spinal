@@ -90,6 +90,9 @@ def main():
     ap.add_argument("--max-tokens", type=int, default=120)
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--sample-interval", type=float, default=1.0)
+    ap.add_argument("--nodes", nargs="+", default=None, metavar="HOST:PORT",
+                    help="fleet node base URLs to scrape /metrics from "
+                         "(default: single VLLM_BASE_URL node)")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
@@ -99,7 +102,8 @@ def main():
     if not key:
         sys.exit("set VLLM_API_KEY; never committed")
 
-    sampler = MetricsSampler(base, interval=args.sample_interval)
+    sampler_bases = args.nodes if args.nodes else base
+    sampler = MetricsSampler(sampler_bases, interval=args.sample_interval)
     sampler.start()
 
     print(f"Spinal tracer: {args.requests} requests, concurrency {args.concurrency}")
@@ -132,6 +136,7 @@ def main():
     doc = {
         "timestamp": time.strftime("%Y-%m-%d_%H%M%S"),
         "endpoint": base,
+        "nodes": sampler.bases,
         "model": model,
         "concurrency": args.concurrency,
         "wall_s": round(wall, 2),

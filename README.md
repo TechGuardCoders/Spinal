@@ -59,6 +59,21 @@ python analyze.py traces/spinal_<ts>.json [--baseline traces/spinal_<base>.json]
 Drift tolerance is 1.25× by default (upward) — the threshold that turned
 "c=4 is slower" into a flagged, quantified alert.
 
+### Multi-node fleet
+
+Scrape `/metrics` from every fleet node while tracing (read-only GETs;
+counters summed, KV cache merged as fleet max, per-node values kept in
+each sample's `nodes` map):
+
+```bash
+VLLM_API_KEY=<key> python tracer.py --requests 12 --concurrency 2 \
+  --nodes http://192.168.0.182:8000 http://192.168.0.157:8421 \
+          http://192.168.0.10:8422 http://192.168.0.144:8422 \
+          http://192.168.0.11:8450
+```
+
+Omitting `--nodes` keeps the classic single-node sampling behavior.
+
 ## How it serves the stack
 
 - **Queue-time visibility** — the phase that's invisible in total-latency

@@ -32,9 +32,33 @@ def fetch_gauges(base):
     return out
 
 
+def fetch_fleet_gauges(bases):
+    """Poll /metrics on every node; aggregate across the fleet.
+
+    Counters-style gauges (running, waiting) are summed; bounded gauges
+    (kvCache) are merged as the fleet max. Per-node values are kept under
+    "nodes" keyed by base URL so a single hot lane stays visible.
+    """
+    nodes = {}
+    for base in bases:
+        g = fetch_gauges(base)
+        if g is not None:
+            nodes[base] = g
+    if not nodes:
+        return None
+    return {
+        "running": sum(n["running"] for n in nodes.values()),
+        "waiting": sum(n["waiting"] for n in nodes.values()),
+        "kvCache": max((n["kvCache"] for n in nodes.values() if n["kvCache"] is not None), default=None),
+        "nodes": nodes,
+    }
+
+
 class MetricsSampler:
     def __init__(self, base, interval=1.0):
-        self.base = base
+        """base: a single base URL or a list of fleet node base URLs."""
+        self.bases = [base] if isinstance(base, str) else list(base)
+        self.base = self.bases[0]  # back-compat for callers reading .base
         self.interval = interval
         self.samples = []
         self._stop = threading.Event()
@@ -46,7 +70,10 @@ class MetricsSampler:
 
     def _loop(self):
         while not self._stop.is_set():
-            g = fetch_gauges(self.base)
+            if len(self.bases) == 1:
+                g = fetch_gauges(self.bases[0])
+            else:
+                g = fetch_fleet_gauges(self.bases)
             if g is not None:
                 self.samples.append({"ts": time.time(), **g})
             self._stop.wait(self.interval)
